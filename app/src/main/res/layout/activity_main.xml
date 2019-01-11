@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- TODO: 09/01/2019  simple banner add -->
+
+    <Button
+        android:id="@+id/butt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:onClick="onCLick"
+        android:text="start new activity" />
+
+    <com.startapp.android.publish.ads.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/butt"
+        android:layout_centerHorizontal="true" />
+
+    <!-- TODO: 09/01/2019 Mrec Banner -->
+    <com.startapp.android.publish.ads.banner.Mrec
+        android:id="@+id/mrec_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/banner"
+        android:layout_marginTop="10dp" />
+    <!-- TODO: 09/01/2019 Cover Ads -->
+    <com.startapp.android.publish.ads.banner.Cover
+        android:id="@+id/startAppCover"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mrec_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+
+</RelativeLayout>
